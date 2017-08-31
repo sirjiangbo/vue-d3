@@ -32,7 +32,7 @@
 				const xxScale = scaleBand().domain(this.a).range([0, innerW]);
 				const xScale = scaleLinear().domain([0, this.list.length]).range([0, innerW]);
 				const yscale = scaleLinear().domain([9, 0]).range([0, innerH]);
-				const xAxis = axis.axisBottom().scale(xxScale);
+				const xAxis = axis.axisBottom().scale(xScale);
 				const yAxis = axis.axisLeft(yscale);
 				select('#' + this.id)
 					.append('svg')
