@@ -143,7 +143,7 @@ function newInterval(floori, offseti, count, field) {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return root; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "c", function() { return root; });
 /* harmony export (immutable) */ __webpack_exports__["a"] = Selection;
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__select__ = __webpack_require__(122);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__selectAll__ = __webpack_require__(123);
@@ -248,7 +248,7 @@ Selection.prototype = selection.prototype = {
   dispatch: __WEBPACK_IMPORTED_MODULE_28__dispatch__["a" /* default */]
 };
 
-/* unused harmony default export */ var _unused_webpack_default_export = (selection);
+/* harmony default export */ __webpack_exports__["b"] = (selection);
 
 
 /***/ }),
@@ -2612,7 +2612,7 @@ function applyToTag (styleElement, obj) {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__src_selectAll__ = __webpack_require__(149);
 /* unused harmony reexport selectAll */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__src_selection_index__ = __webpack_require__(1);
-/* unused harmony reexport selection */
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return __WEBPACK_IMPORTED_MODULE_8__src_selection_index__["b"]; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__src_selector__ = __webpack_require__(31);
 /* unused harmony reexport selector */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__src_selectorAll__ = __webpack_require__(51);
@@ -12940,6 +12940,10 @@ if (false) {(function () {
 //
 //
 //
+//
+//
+//
+//
 
 
 
@@ -13098,6 +13102,12 @@ module.exports = function listToStyles (parentId, list) {
 //
 //
 //
+//
+//
+//
+//
+//
+//
 
 
 
@@ -13115,7 +13125,7 @@ module.exports = function listToStyles (parentId, list) {
 		};
 	},
 	mounted() {
-		this.handleClick();
+		// this.handleClick();
 	},
 	methods: {
 		handleClick() {
@@ -13206,7 +13216,7 @@ Local.prototype = local.prototype = {
 /* harmony default export */ __webpack_exports__["a"] = (function(selector) {
   return typeof selector === "string"
       ? new __WEBPACK_IMPORTED_MODULE_0__selection_index__["a" /* Selection */]([[document.querySelector(selector)]], [document.documentElement])
-      : new __WEBPACK_IMPORTED_MODULE_0__selection_index__["a" /* Selection */]([[selector]], __WEBPACK_IMPORTED_MODULE_0__selection_index__["b" /* root */]);
+      : new __WEBPACK_IMPORTED_MODULE_0__selection_index__["a" /* Selection */]([[selector]], __WEBPACK_IMPORTED_MODULE_0__selection_index__["c" /* root */]);
 });
 
 
@@ -13995,7 +14005,7 @@ function dispatchFunction(type, params) {
 /* unused harmony default export */ var _unused_webpack_default_export = (function(selector) {
   return typeof selector === "string"
       ? new __WEBPACK_IMPORTED_MODULE_0__selection_index__["a" /* Selection */]([document.querySelectorAll(selector)], [document.documentElement])
-      : new __WEBPACK_IMPORTED_MODULE_0__selection_index__["a" /* Selection */]([selector == null ? [] : selector], __WEBPACK_IMPORTED_MODULE_0__selection_index__["b" /* root */]);
+      : new __WEBPACK_IMPORTED_MODULE_0__selection_index__["a" /* Selection */]([selector == null ? [] : selector], __WEBPACK_IMPORTED_MODULE_0__selection_index__["c" /* root */]);
 });
 
 
@@ -16750,11 +16760,11 @@ function sequential(interpolator) {
 
 "use strict";
 var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
+  return _c('div', [_c('div', {
     attrs: {
-      "id": _vm.id
+      "id": "test1"
     }
-  }, [_c('p'), _vm._v(" "), _c('p')])
+  }, [_vm._t("test1")], 2), _vm._v(" "), _c('p', [_vm._v("阿斯顿发啥发啥发啥地")]), _vm._v(" "), _c('div', [_vm._t("default")], 2), _vm._v(" "), _c('p', [_vm._v("333333333")])])
 }
 var staticRenderFns = []
 render._withStripped = true
@@ -16898,6 +16908,7 @@ exports.push([module.i, "\n.svg {\n\tbackground: #f8f8f8;\n}\n.line {\n  fill: n
 		};
 	},
 	mounted() {
+		console.log(Object(__WEBPACK_IMPORTED_MODULE_0_d3_selection__["b" /* selection */])());
 		const svgWidth = this.width || __WEBPACK_IMPORTED_MODULE_4__variables__["c" /* width */];
 		const svgHeight = this.height || __WEBPACK_IMPORTED_MODULE_4__variables__["a" /* height */];
 		const container = Object(__WEBPACK_IMPORTED_MODULE_0_d3_selection__["a" /* select */])('#' + this.id);
@@ -18677,7 +18688,9 @@ if (false) {
 
 "use strict";
 var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', [_c('d-line', {
+  return _c('div', [_c('Bar', [_c('h2', [_vm._v("slasfjl")]), _vm._v(" "), _c('p', {
+    slot: "test1"
+  }, [_vm._v("test1")]), _vm._v(" "), _c('p', [_vm._v("上的爽肤水")])]), _vm._v(" "), _c('d-line', {
     attrs: {
       "id": 'line1'
     }

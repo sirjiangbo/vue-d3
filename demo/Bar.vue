@@ -1,7 +1,13 @@
 <template>
-	<div :id="id">
-		<p></p>
-		<p></p>
+	<div>
+		<div id="test1">
+			<slot name="test1"></slot>
+		</div>	
+		<p>阿斯顿发啥发啥发啥地</p>
+		<div>
+			<slot></slot>	
+		</div>
+		<p>333333333</p>
 	</div>
 </template>
 
@@ -22,7 +28,7 @@
 			}
 		},
 		mounted() {
-			this.handleClick();
+			// this.handleClick();
 		},
 		methods: {
 			handleClick() {

@@ -1,6 +1,10 @@
 <template>
 	<div>
-		<!-- <Bar :id="'bar1'" :list="list"></Bar> -->
+		<Bar>
+			<h2>slasfjl</h2>
+			<p slot="test1">test1</p>
+			<p>上的爽肤水</p>
+		</Bar>
 		<d-line :id="'line1'"></d-line>
 	</div>
 </template>

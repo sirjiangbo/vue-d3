@@ -3,7 +3,7 @@
 </template>
 
 <script>
-	import { select, style } from 'd3-selection'
+	import { select, style, selection } from 'd3-selection'
 	import { line, radialLine } from 'd3-shape'
 	import { axisBottom, axisLeft } from 'd3-axis'
 	import { scaleLinear, scaleBand } from 'd3-scale'
@@ -33,6 +33,7 @@
 			}
 		},
 		mounted() {
+			console.log(selection())
 			const svgWidth = this.width || width;
 			const svgHeight = this.height || height;
 			const container = select('#' + this.id);
